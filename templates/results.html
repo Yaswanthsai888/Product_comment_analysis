@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Analysis Results</title>
+</head>
+<body>
+    <h1>Comment Analysis for {{ product_name }}</h1>
+    
+    <h2>Positive Feedback Summary</h2>
+    <p>{{ summaries['Positive'] }}</p>
+
+    <h2>Negative Feedback Summary</h2>
+    <p>{{ summaries['Negative'] }}</p>
+
+    <h2>Neutral Feedback Summary</h2>
+    <p>{{ summaries['Neutral'] }}</p>
+
+    <h2>Answers to Key Questions</h2>
+    <ul>
+        {% for answer in question_answers %}
+            <li>{{ answer }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
