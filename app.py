@@ -15,10 +15,10 @@ import csv
 app = Flask(__name__)
 
 # Initialize the Groq client
-groq_client = Groq(api_key="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")
+groq_client = Groq(api_key="Your API Key")
 
 # Initialize YouTube API
-YOUTUBE_API_KEY = "AIzaSyCMdGdtmX2RcxBBKgldmfTelvk02CMQmu8"
+YOUTUBE_API_KEY = "Your Api Key"
 youtube = build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
 
 # Function to generate keywords using Groq API
